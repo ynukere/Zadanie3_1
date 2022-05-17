@@ -8,6 +8,7 @@ class Main {
       Service1 s = new Service1();
       int x=4;
       String imie;
+      String nazwisko;
       int wiek;
       String born;
       System.out.println("Baza danych");
@@ -25,6 +26,8 @@ class Main {
                   Scanner skan1 = new Scanner(System.in);
                   System.out.println("Podaj imie: ");
                   imie=skan1.nextLine();
+                  System.out.println("Podaj nazwisko: ");
+                  nazwisko=skan1.nextLine();
                   System.out.println("Podaj wiek: ");
                   wiek=skan.nextInt();
                   System.out.println("Podaj datę urodzenia: ");
