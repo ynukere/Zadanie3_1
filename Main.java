@@ -11,13 +11,13 @@ class Main {
       String nazwisko;
       int wiek;
       String born;
-      System.out.println("Baza danych");
+      System.out.println("Witaj!");
       while(x!=0)
         {
           System.out.println("Wybierz funkcję: \n"+
-                        "1 - dodanie nowego studenta. \n"+
-                        "2 - pokaż studentów. \n"+
-                        "3 - wyjście z programu.");
+                        "1 - dodanie nowego studenta \n"+
+                        "2 - wyszukanie danego studenta \n"+
+                        "3 - wyjście z programu");
           x=skan.nextInt();
           switch(x)
             {
@@ -32,7 +32,7 @@ class Main {
                   wiek=skan.nextInt();
                   System.out.println("Podaj datę urodzenia: ");
                   born=skan1.nextLine();
-                  s.addStudent(new Student(imie, wiek, born));
+                  s.addStudent(new Student(imie,nazwisko, wiek, born));
                 }break;
               case 2:
                 {
